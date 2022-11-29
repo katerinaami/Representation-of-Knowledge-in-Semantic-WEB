@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                      targetNamespace="schedule"
+                      xmlns="schedule"
+                      elementFormDefault="qualified">
+					  
+	<xsd:simpleType name="weekday">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Monday"/>
+			<xsd:enumeration value="Tuesday"/>
+			<xsd:enumeration value="Wednesday"/>
+			<xsd:enumeration value="Thursday"/>
+			<xsd:enumeration value="Friday"/>
+			<xsd:enumeration value="Saturday"/>
+			<xsd:enumeration value="Sunday"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="specificTime">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9][0-9]:[0-9][0-9]-[0-9][0-9]:[0-9][0-9]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+					  
+    <xsd:element name="Schedule">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Event"  maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Title" type="xsd:string"/>
+                            <xsd:element name="Lecture" minOccurs="1" maxOccurs="10">
+							    <xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Day" type="weekday"/>
+										<xsd:element name="Time" type="specificTime"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

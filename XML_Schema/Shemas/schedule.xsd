@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.somesite.com/schema/schedule"
+xmlns="http://www.somesite.com/schema/schedule"
+elementFormDefault="qualified">
+	<xsd:simpleType name="dayType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Monday"/>
+			<xsd:enumeration value="Tuesday"/>
+			<xsd:enumeration value="Wednesday"/>
+			<xsd:enumeration value="Thursday"/>
+			<xsd:enumeration value="Friday"/>
+			<xsd:enumeration value="Saturday"/>
+			<xsd:enumeration value="Sunday"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="timeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9][0-9]:[0-9][0-9]-[0-9][0-9]:[0-9][0-9]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+
+	
+	<xsd:simpleType name="classroom">
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="8"/>
+			</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="lectureType">
+		<xsd:sequence>
+			<xsd:element name="Day" type="dayType"/>
+			<xsd:element name="Time" type="timeType"/>
+		</xsd:sequence>
+		<xsd:attribute name="Classroom" type="classroom" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="lessonType">
+		<xsd:complexContent>
+			<xsd:extension base="eventType">
+				<xsd:sequence>
+					<xsd:element name="Professor" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	
+	<xsd:complexType name="seminarType">
+		<xsd:complexContent>
+			<xsd:sequence>
+				<xsd:element name="seminar" type="lectureType" maxOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexContent>	
+	</xsd:complexType>
+	
+	<xsd:complexType name="labType">
+		<xsd:complexContent>
+			<xsd:restriction base="xsd:string">
+				<Classroom value="collapse"/>
+			</xsd:restriction>
+			<xsd:element name="lab" type="lectureType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="eventType">
+		<xsd:sequence>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element name="Title" type="xsd:string"/>
+				<xsd:element name="Lecture" type="lectureType" minOccurs="1" maxOccurs="10"/>
+				<xsd:element name="Seminar" type="seminarType"/>
+				<xsd:element name="Lab" type="labType"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:element name="Event" type="eventType"/>
+
+	<xsd:element name="Schedule">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Event" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
