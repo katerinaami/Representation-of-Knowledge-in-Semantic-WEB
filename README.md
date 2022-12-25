@@ -2,6 +2,6 @@
 
 2 individual projects about xml,xml-schema and rdf
 
-1 team project pending
+1 team project 
 
 Professor: Hatziligeroudis Ioannis
