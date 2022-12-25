@@ -1,0 +1,1034 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mariosstefanidis/ontologies/2022/11/hospital"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mariosstefanidis/ontologies/2022/11/hospital">
+    <Prefix name="" IRI="http://www.semanticweb.org/mariosstefanidis/ontologies/2022/11/hospital"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Ambulance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Analgesic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antibiotic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssociateSupplyOfficer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutoimmuneDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CertifiedNursingAssistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClinicalNurseSupervisor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CostumerServiceAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Degree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dentistry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dermatology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmergyRoomRegisteredNurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthCareWorker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospitalized"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ICU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KidneyAutoimmune"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KidneyDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LabTechnician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laboratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogisticsCoordinator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogisticsTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LungCancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LungDisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalAssistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalEquipmentRepairTechnician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microbiologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoICU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oncology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pathology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pediatrics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Private"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Public"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radiologist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegisteredNurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surgeon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visitor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accommodates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accommodatesPatient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canFit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#clearsRoom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#encapsulates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#givesBonus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#givesLeave"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDegree"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDoctor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEmployee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isColleaguesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOwnedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#posseses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#responsibleFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sharesRoomWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#staysIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#staysWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#works"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksAtLaboratory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksWith"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SSN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TIN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#acquiredDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#admissionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fullname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#grade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#heavilyInjured"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isTreatedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfBeds"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfWorkers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#specialty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#staffID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Augmentin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cardiothoracic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Katerina_Mitropoulou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NurseDegree"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Analgesic"/>
+        <ObjectComplementOf>
+            <Class IRI="#Antibiotic"/>
+        </ObjectComplementOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Disease"/>
+        <ObjectUnionOf>
+            <Class IRI="#AutoimmuneDisease"/>
+            <Class IRI="#Cancer"/>
+            <Class IRI="#KidneyDisease"/>
+            <Class IRI="#LungDisease"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Doctor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#HealthCareWorker"/>
+            <ObjectComplementOf>
+                <ObjectIntersectionOf>
+                    <Class IRI="#MedicalAssistant"/>
+                    <Class IRI="#Nurse"/>
+                </ObjectIntersectionOf>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Doctor"/>
+        <DataHasValue>
+            <DataProperty IRI="#isTreatedBy"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#KidneyAutoimmune"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AutoimmuneDisease"/>
+            <Class IRI="#KidneyDisease"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LungCancer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cancer"/>
+            <Class IRI="#LungDisease"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Medicine"/>
+        <ObjectUnionOf>
+            <Class IRI="#Analgesic"/>
+            <Class IRI="#Antibiotic"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NoICU"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Room"/>
+            <ObjectComplementOf>
+                <Class IRI="#ICU"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NoICU"/>
+        <DataHasValue>
+            <DataProperty IRI="#heavilyInjured"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Public"/>
+        <ObjectComplementOf>
+            <Class IRI="#Private"/>
+        </ObjectComplementOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Analgesic"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antibiotic"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antibiotic"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#encapsulates"/>
+            <NamedIndividual IRI="#Augmentin"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssociateSupplyOfficer"/>
+        <Class IRI="#LogisticsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutoimmuneDisease"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cancer"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiology"/>
+        <Class IRI="#Clinic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CertifiedNursingAssistant"/>
+        <Class IRI="#Nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClinicalNurseSupervisor"/>
+        <Class IRI="#Nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CostumerServiceAgent"/>
+        <Class IRI="#LogisticsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dentistry"/>
+        <Class IRI="#Clinic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dermatology"/>
+        <Class IRI="#Clinic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#HealthCareWorker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doctor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#responsibleFor"/>
+            <Class IRI="#Patient"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmergyRoomRegisteredNurse"/>
+        <Class IRI="#Nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthCareWorker"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#Clinic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital"/>
+        <ObjectMinCardinality cardinality="6">
+            <ObjectProperty IRI="#posseses"/>
+            <Class IRI="#Ambulance"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospitalized"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ICU"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KidneyDisease"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LabTechnician"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#works"/>
+            <Class IRI="#LabTechnician"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LogisticsCoordinator"/>
+        <Class IRI="#LogisticsTeam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LogisticsTeam"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LungDisease"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalAssistant"/>
+        <Class IRI="#HealthCareWorker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalEquipmentRepairTechnician"/>
+        <Class IRI="#LabTechnician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microbiologist"/>
+        <Class IRI="#LabTechnician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoICU"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nurse"/>
+        <Class IRI="#HealthCareWorker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oncology"/>
+        <Class IRI="#Clinic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pathology"/>
+        <Class IRI="#Clinic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pediatrics"/>
+        <Class IRI="#Clinic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physician"/>
+        <Class IRI="#Doctor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Private"/>
+        <Class IRI="#Hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Public"/>
+        <Class IRI="#Hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radiologist"/>
+        <Class IRI="#LabTechnician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisteredNurse"/>
+        <Class IRI="#Nurse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Room"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#consistsOf"/>
+            <Class IRI="#Hospitalized"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#owns"/>
+            <Class IRI="#Degree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storage"/>
+        <ObjectMaxCardinality cardinality="10000">
+            <ObjectProperty IRI="#canFit"/>
+            <Class IRI="#Medicine"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surgeon"/>
+        <Class IRI="#Doctor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surgeon"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#is"/>
+            <NamedIndividual IRI="#Cardiothoracic"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visitor"/>
+        <Class IRI="#Patient"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Cardiology"/>
+        <Class IRI="#Dentistry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cardiology"/>
+        <Class IRI="#Dermatology"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cardiology"/>
+        <Class IRI="#Oncology"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cardiology"/>
+        <Class IRI="#Pathology"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cardiology"/>
+        <Class IRI="#Pediatrics"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dentistry"/>
+        <Class IRI="#Dermatology"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dentistry"/>
+        <Class IRI="#Oncology"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dentistry"/>
+        <Class IRI="#Pediatrics"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dermatology"/>
+        <Class IRI="#Pathology"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Oncology"/>
+        <Class IRI="#Pathology"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Oncology"/>
+        <Class IRI="#Pediatrics"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Antibiotic"/>
+        <NamedIndividual IRI="#Augmentin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Surgeon"/>
+        <NamedIndividual IRI="#Cardiothoracic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nurse"/>
+        <NamedIndividual IRI="#Katerina_Mitropoulou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Degree"/>
+        <NamedIndividual IRI="#NurseDegree"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDegree"/>
+        <NamedIndividual IRI="#Katerina_Mitropoulou"/>
+        <NamedIndividual IRI="#NurseDegree"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TIN"/>
+        <NamedIndividual IRI="#Katerina_Mitropoulou"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">123456789</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Katerina_Mitropoulou"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">katmitropoulou@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="#Katerina_Mitropoulou"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acquiredDate"/>
+        <NamedIndividual IRI="#NurseDegree"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-14T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grade"/>
+        <NamedIndividual IRI="#NurseDegree"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.25</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#clearsRoom"/>
+        <ObjectProperty IRI="#staysIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consistsOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#encapsulates"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#fires"/>
+        <ObjectProperty IRI="#hasEmployee"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#givesBonus"/>
+        <ObjectProperty IRI="#hasEmployee"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#givesLeave"/>
+        <ObjectProperty IRI="#hasEmployee"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#posseses"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#treats"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#accommodates"/>
+        <ObjectProperty IRI="#staysIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#hasDoctor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDegree"/>
+        <ObjectProperty IRI="#isOwnedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#treatedBy"/>
+        <ObjectProperty IRI="#treats"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#staysIn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#worksAtLaboratory"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#accommodatesPatient"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasEmployee"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#staysWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#worksWith"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isColleaguesWith"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#sharesRoomWith"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accommodates"/>
+        <Class IRI="#Room"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accommodatesPatient"/>
+        <Class IRI="#ICU"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsTo"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#clearsRoom"/>
+        <Class IRI="#Hospitalized"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fires"/>
+        <Class IRI="#Hospital"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#givesBonus"/>
+        <Class IRI="#Hospital"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#givesLeave"/>
+        <Class IRI="#Hospital"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDegree"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDoctor"/>
+        <Class IRI="#Clinic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <Class IRI="#Hospital"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isColleaguesWith"/>
+        <Class IRI="#MedicalAssistant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <Class IRI="#Degree"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sharesRoomWith"/>
+        <Class IRI="#Hospitalized"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#staysIn"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#staysWith"/>
+        <Class IRI="#Hospitalized"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treatedBy"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treats"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksAtLaboratory"/>
+        <Class IRI="#Radiologist"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksWith"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accommodates"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accommodatesPatient"/>
+        <Class IRI="#Hospitalized"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsTo"/>
+        <Class IRI="#Clinic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#clearsRoom"/>
+        <Class IRI="#Room"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fires"/>
+        <Class IRI="#LogisticsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#givesBonus"/>
+        <Class IRI="#LogisticsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#givesLeave"/>
+        <Class IRI="#LogisticsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDegree"/>
+        <Class IRI="#Degree"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDoctor"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <Class IRI="#LogisticsTeam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isColleaguesWith"/>
+        <Class IRI="#MedicalAssistant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sharesRoomWith"/>
+        <Class IRI="#Hospitalized"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#staysIn"/>
+        <Class IRI="#Room"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#staysWith"/>
+        <Class IRI="#Hospitalized"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treatedBy"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treats"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksAtLaboratory"/>
+        <Class IRI="#Laboratory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksWith"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#admissionDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#numberOfBeds"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SSN"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TIN"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#acquiredDate"/>
+        <Class IRI="#Degree"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#admissionDate"/>
+        <Class IRI="#Hospitalized"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fullname"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#grade"/>
+        <Class IRI="#Degree"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#heavilyInjured"/>
+        <Class IRI="#Room"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isTreatedBy"/>
+        <Class IRI="#HealthCareWorker"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOf"/>
+        <Class IRI="#Ambulance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfBeds"/>
+        <Class IRI="#NoICU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfWorkers"/>
+        <Class IRI="#Clinic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phone"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#specialty"/>
+        <Class IRI="#Doctor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#staffID"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#SSN"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TIN"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#acquiredDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#admissionDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#email"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fullname"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#grade"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#heavilyInjured"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isTreatedBy"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOf"/>
+        <Datatype abbreviatedIRI="xsd:nonPositiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOfBeds"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOfWorkers"/>
+        <Datatype abbreviatedIRI="xsd:nonPositiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#phone"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#specialty"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#staffID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
