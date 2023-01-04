@@ -166,16 +166,28 @@
         <ObjectProperty IRI="#accommodatesPatient"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#associatesWith"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#belongsTo"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#canBeTreatedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#canFit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#colleaguesWith"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#consistsOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#diseaseIsTreatedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#encapsulates"/>
@@ -190,10 +202,19 @@
         <ObjectProperty IRI="#hasDegree"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasDisease"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasDoctor"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasEmployee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasScrubNurse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#helpedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#is"/>
@@ -205,7 +226,13 @@
         <ObjectProperty IRI="#isOwnedBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isTreatedIn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patientPrescribed"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#posseses"/>
@@ -230,6 +257,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#staysWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supervises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#surgeonAt"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#treatedBy"/>
@@ -280,6 +313,9 @@
         <DataProperty IRI="#numberOfBeds"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#numberOfLeave"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#numberOfWorkers"/>
     </Declaration>
     <Declaration>
@@ -304,6 +340,9 @@
         <NamedIndividual IRI="#Augmentin"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#BusinessAdministrationDegree"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Callie_Torres"/>
     </Declaration>
     <Declaration>
@@ -316,13 +355,25 @@
         <NamedIndividual IRI="#Clinic2"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Cytopathology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Derek_Sheperd"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Dimitris_Vergnis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DoctorDegree"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#EconomicsDegree"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Elena_Paparizou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Forensic_Pathology"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Fotini_Aggelaki"/>
@@ -373,6 +424,9 @@
         <NamedIndividual IRI="#Litsa_Kritsioni"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Lupus"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Man_Our"/>
     </Declaration>
     <Declaration>
@@ -391,6 +445,9 @@
         <NamedIndividual IRI="#Maura_Polydorou"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#MedicalOncology"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Meredith_Gray"/>
     </Declaration>
     <Declaration>
@@ -404,6 +461,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#NurseDegree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paidon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Radiation_Oncology"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Room1"/>
@@ -428,6 +491,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#antimicrobial_agents"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#Disease"/>
@@ -774,6 +840,10 @@
         <NamedIndividual IRI="#Augmentin"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Degree"/>
+        <NamedIndividual IRI="#BusinessAdministrationDegree"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Doctor"/>
         <NamedIndividual IRI="#Callie_Torres"/>
     </ClassAssertion>
@@ -790,8 +860,20 @@
         <NamedIndividual IRI="#Clinic2"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Pathology"/>
+        <NamedIndividual IRI="#Cytopathology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LogisticsTeam"/>
+        <NamedIndividual IRI="#Derek_Sheperd"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Hospitalized"/>
         <NamedIndividual IRI="#Dimitris_Vergnis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Degree"/>
+        <NamedIndividual IRI="#DoctorDegree"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Degree"/>
@@ -800,6 +882,10 @@
     <ClassAssertion>
         <Class IRI="#Radiologist"/>
         <NamedIndividual IRI="#Elena_Paparizou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pathology"/>
+        <NamedIndividual IRI="#Forensic_Pathology"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#MedicalAssistant"/>
@@ -866,6 +952,10 @@
         <NamedIndividual IRI="#Litsa_Kritsioni"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#KidneyAutoimmune"/>
+        <NamedIndividual IRI="#Lupus"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#LogisticsTeam"/>
         <NamedIndividual IRI="#Manolis_Foteinos"/>
     </ClassAssertion>
@@ -886,6 +976,10 @@
         <NamedIndividual IRI="#Maura_Polydorou"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Oncology"/>
+        <NamedIndividual IRI="#MedicalOncology"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Doctor"/>
         <NamedIndividual IRI="#Meredith_Gray"/>
     </ClassAssertion>
@@ -904,6 +998,14 @@
     <ClassAssertion>
         <Class IRI="#Degree"/>
         <NamedIndividual IRI="#NurseDegree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hospital"/>
+        <NamedIndividual IRI="#Paidon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Oncology"/>
+        <NamedIndividual IRI="#Radiation_Oncology"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Room"/>
@@ -941,6 +1043,11 @@
         <ObjectProperty IRI="#staysWith"/>
         <NamedIndividual IRI="#Alexis_Tsipras"/>
         <NamedIndividual IRI="#Kiriakos_Mitsotakis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#givesBonus"/>
+        <NamedIndividual IRI="#AttikoHospital"/>
+        <NamedIndividual IRI="#Ilias_Psinakis"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEmployee"/>
@@ -1098,6 +1205,11 @@
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">745698132</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#grade"/>
+        <NamedIndividual IRI="#BusinessAdministrationDegree"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#specialty"/>
         <NamedIndividual IRI="#Callie_Torres"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Orthopedic</Literal>
@@ -1113,14 +1225,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">150</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#numberOfLeave"/>
+        <NamedIndividual IRI="#Derek_Sheperd"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#SSN"/>
         <NamedIndividual IRI="#Dimitris_Vergnis"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">12040008895</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#grade"/>
+        <NamedIndividual IRI="#DoctorDegree"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grade"/>
         <NamedIndividual IRI="#EconomicsDegree"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#staffID"/>
@@ -1136,6 +1258,11 @@
         <DataProperty IRI="#specialty"/>
         <NamedIndividual IRI="#Ilias_Psinakis"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Andrologist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="#Ilias_Psinakis"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#SSN"/>
@@ -1198,6 +1325,11 @@
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">159487632</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#numberOfLeave"/>
+        <NamedIndividual IRI="#Manolis_Foteinos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#staffID"/>
         <NamedIndividual IRI="#Manolis_Foteinos"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
@@ -1218,6 +1350,16 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-25T09:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#numberOfLeave"/>
+        <NamedIndividual IRI="#Maura_Polydorou"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#Maura_Polydorou"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">6945777958</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#staffID"/>
         <NamedIndividual IRI="#Maura_Polydorou"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
@@ -1236,6 +1378,11 @@
         <DataProperty IRI="#specialty"/>
         <NamedIndividual IRI="#Meredith_Gray"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">General Surgeon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#staffID"/>
+        <NamedIndividual IRI="#Meredith_Gray"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">153</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#staffID"/>
@@ -1273,7 +1420,23 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">86</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#associatesWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canBeTreatedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#colleaguesWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#consistsOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#diseaseIsTreatedBy"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -1287,6 +1450,26 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#givesLeave"/>
         <ObjectProperty IRI="#hasEmployee"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDisease"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasScrubNurse"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#helpedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTreatedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#patientPrescribed"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#posseses"/>
@@ -1303,6 +1486,14 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#staysInNoICU"/>
         <ObjectProperty IRI="#staysIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#supervises"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#surgeonAt"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#treats"/>
@@ -1361,6 +1552,18 @@
         <Class IRI="#Doctor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canBeTreatedBy"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#colleaguesWith"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#diseaseIsTreatedBy"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#givesBonus"/>
         <Class IRI="#Hospital"/>
     </ObjectPropertyDomain>
@@ -1373,6 +1576,10 @@
         <Class IRI="#Staff"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDisease"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDoctor"/>
         <Class IRI="#Clinic"/>
     </ObjectPropertyDomain>
@@ -1381,12 +1588,28 @@
         <Class IRI="#Hospital"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasScrubNurse"/>
+        <Class IRI="#Clinic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#helpedBy"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isColleaguesWith"/>
         <Class IRI="#MedicalAssistant"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isOwnedBy"/>
         <Class IRI="#Degree"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTreatedIn"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patientPrescribed"/>
+        <Class IRI="#Patient"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#posseses"/>
@@ -1417,6 +1640,14 @@
         <Class IRI="#Hospitalized"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supervises"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#surgeonAt"/>
+        <Class IRI="#Surgeon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#treatedBy"/>
         <Class IRI="#Patient"/>
     </ObjectPropertyDomain>
@@ -1432,6 +1663,10 @@
         <ObjectProperty IRI="#worksWith"/>
         <Class IRI="#Staff"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#accommodates"/>
         <Class IRI="#Hospitalized"/>
@@ -1443,6 +1678,18 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#belongsTo"/>
         <Class IRI="#Clinic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canBeTreatedBy"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#colleaguesWith"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#diseaseIsTreatedBy"/>
+        <Class IRI="#Medicine"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#givesBonus"/>
@@ -1457,6 +1704,10 @@
         <Class IRI="#Degree"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDisease"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDoctor"/>
         <Class IRI="#Doctor"/>
     </ObjectPropertyRange>
@@ -1465,12 +1716,28 @@
         <Class IRI="#LogisticsTeam"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasScrubNurse"/>
+        <Class IRI="#Nurse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#helpedBy"/>
+        <Class IRI="#Nurse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isColleaguesWith"/>
         <Class IRI="#MedicalAssistant"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isOwnedBy"/>
         <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTreatedIn"/>
+        <Class IRI="#Clinic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#patientPrescribed"/>
+        <Class IRI="#Medicine"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#posseses"/>
@@ -1501,6 +1768,14 @@
         <Class IRI="#Hospitalized"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#supervises"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#surgeonAt"/>
+        <Class IRI="#Clinic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#treatedBy"/>
         <Class IRI="#Doctor"/>
     </ObjectPropertyRange>
@@ -1516,12 +1791,20 @@
         <ObjectProperty IRI="#worksWith"/>
         <Class IRI="#Staff"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#admissionDate"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#numberOfBeds"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#numberOfLeave"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
@@ -1567,6 +1850,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#numberOfBeds"/>
         <Class IRI="#NoICU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numberOfLeave"/>
+        <Class IRI="#Staff"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#numberOfWorkers"/>
@@ -1629,6 +1916,10 @@
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#numberOfLeave"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#numberOfWorkers"/>
         <Datatype abbreviatedIRI="xsd:positiveInteger"/>
     </DataPropertyRange>
@@ -1644,6 +1935,171 @@
         <DataProperty IRI="#staffID"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#supervises"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#associatesWith"/>
+                <Variable IRI="#y"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#colleaguesWith"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#treatedBy"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#belongsTo"/>
+                <Variable IRI="#y"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isTreatedIn"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasDisease"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#diseaseIsTreatedBy"/>
+                <Variable IRI="#y"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#patientPrescribed"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S5</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isTreatedIn"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasDoctor"/>
+                <Variable IRI="#y"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canBeTreatedBy"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S4</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#surgeonAt"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasScrubNurse"/>
+                <Variable IRI="#y"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#helpedBy"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
 </Ontology>
 
 
